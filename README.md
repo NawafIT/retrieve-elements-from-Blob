@@ -23,22 +23,15 @@ It iterates through each blob item in the response and processes them accordingl
 - **@azure/identity**: Version 4.2.0
 - **@azure/storage-blob**: Version 12.17.0
 
+
 ## Installation
 [Provide detailed instructions on how to install the dependencies and set up the environment to run the code. You can include commands for package managers like npm or yarn.]
 
 ```bash
 npm install @azure/identity@4.2.0 @azure/storage-blob@12.17.0
-
+```
 
 ### Usage
 
 To use this code, ensure that you have installed the required dependencies, including `@azure/identity` and `@azure/storage-blob` with the specified versions. Configure the connection to your Azure Blob Storage account by providing the necessary credentials and connection string.
-
 Once configured, you can execute the code to retrieve elements from Blob Storage with continuationToken. Adjust the options for listing blobs as needed based on your specific scenario.
-
-### Considerations
-
-- Pagination using continuationToken is essential when dealing with a large number of blobs to avoid timeouts and improve performance.
-- Ensure that appropriate error handling is implemented to handle exceptions that may occur during retrieval.
-- ContinuationToken allows you to resume listing from where you left off in case of interruptions or when processing large datasets incrementally.
-
